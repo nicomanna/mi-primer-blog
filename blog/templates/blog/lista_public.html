@@ -1,0 +1,34 @@
+<html>
+    <head>
+        <title>Blog del profe Jorge</title>
+    </head>
+    <body>
+        <div>
+            <h1><a href="/">Blog del profe Jorge</a></h1>
+        </div>
+        {% for publicacion in publicaciones %}
+        <div>
+            <p> publicado: {{ publicacion.fecha_publicacion}}</p>
+            <h2><a href="">{{ publicacion.titulo }}</a></h2>
+            <p>{{ publicacion.texto|linebreaksbr }}</p>
+            <hr>
+        </div>
+        {% endfor %}
+        <div>   
+            <p>publicado: 15.03.2025, 09:22</p>
+            <h2><a href="">Mi segunda publicación</a></h2>
+            <p>El desarrollo web moderno ha evolucionado enormemente desde los días de HTML
+estático. Hoy, frameworks como React, Vue y Angular dominan el frontend, mientras que Django,
+Laravel y Node.js son populares en el backend. La tendencia hacia las aplicaciones de página
+única (SPA) y el renderizado del lado del servidor (SSR) sigue creciendo. Por otro lado, tec-
+nologías como WebAssembly permiten ejecutar código de alto rendimiento en el navegador,
+abriendo posibilidades para aplicaciones web que antes solo eran posibles en escritorio. La
+accesibilidad web se ha convertido en un aspecto crucial, con regulaciones como la WCAG 2.1
+estableciendo estándares para hacer la web más inclusiva. Paralelamente, el movimientoJamstack
+ (JavaScript, APIs y Markup) está ganando adeptos, prometiendo sitios más rápidos,
+seguros y escalables. Para los nuevos desarrolladores, la curva de aprendizaje puede parecer
+abrumadora, pero la comunidad nunca ha sido más activa y los recursos de aprendizaje más
+abundantes.</p>
+        </div>
+    </body>
+</html>
