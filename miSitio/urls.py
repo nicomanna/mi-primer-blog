@@ -18,10 +18,5 @@ from django.urls import path, include
 
 urlpatterns = [
     path('admin/', admin.site.urls),
- HEAD
     path('', include('blog.urls')),  # Delegás a blog.urls
 ]
-
-    path('', include('blog.urls')),
-]
- 8f1c4d3 (Actualizo proyecto con modelo Marca, vistas y templates)

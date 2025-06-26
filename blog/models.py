@@ -16,7 +16,7 @@ class Publicacion(models.Model):
 
 # Create your models here.
 class Marca(models.Model):
- HEAD
+
     nombre = models.CharField(max_length=100)
     fecha_fundacion = models.DateField()
     descripcion = models.TextField()
@@ -32,4 +32,3 @@ class Marca(models.Model):
     def __str__(self):
         return self.nombre
 
- 8f1c4d3 (Actualizo proyecto con modelo Marca, vistas y templates)
