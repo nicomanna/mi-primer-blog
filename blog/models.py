@@ -16,7 +16,6 @@ class Publicacion(models.Model):
 
 # Create your models here.
 class Marca(models.Model):
- HEAD
     nombre = models.CharField(max_length=100)
     fecha_fundacion = models.DateField()
     descripcion = models.TextField()
