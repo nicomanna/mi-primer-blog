@@ -9,6 +9,7 @@ def lista_public(request):
         fecha_publicacion__lte=timezone.now()
     ).order_by('fecha_publicacion')
     return render(request, 'blog/lista_public.html', {'publicaciones': publicaciones})
+
 def lista_marcas(request):
     marcas = Marca.objects.all()
     return render(request, 'blog/lista_marcas.html', { 'marcas': marcas })
