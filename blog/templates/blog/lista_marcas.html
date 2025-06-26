@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Marcas</title>
+</head>
+<body>
+  <h1>Marcas de Autos</h1>
+
+  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/Car-brands.jpg/800px-Car-brands.jpg"
+       alt="Logos de marcas de autos" width="400">
+
+  <ul>
+    {% for marca in marcas %}
+      <li>{{ marca.nombre }} — {{ marca.pais_origen }} ({{ marca.fundacion }})</li>
+    {% empty %}
+      <li>No hay marcas cargadas.</li>
+    {% endfor %}
+  </ul>
+</body>
+</html>
