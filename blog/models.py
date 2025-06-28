@@ -16,19 +16,10 @@ class Publicacion(models.Model):
 
 # Create your models here.
 class Marca(models.Model):
-
-    nombre = models.CharField(max_length=100)
-    fecha_fundacion = models.DateField()
-    descripcion = models.TextField()
-
-    def __str__(self):
-        return self.nombre
-# Create your models here.
-
-    nombre       = models.CharField(max_length=100)
-    pais_origen  = models.CharField(max_length=100)
-    fundacion    = models.PositiveIntegerField()
-
+    nombre = models.CharField(max_length=100, blank=True, null=True)
+    fecha_fundacion = models.DateField(blank=True, null=True)
+    descripcion = models.TextField(blank=True, null=True)
+    pais_origen = models.CharField(max_length=100, blank=True, null=True)
     def __str__(self):
         return self.nombre
 
