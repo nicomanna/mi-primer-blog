@@ -12,5 +12,3 @@ def lista_public(request):
 def lista_marcas(request):
     marcas = Marca.objects.all()
     return render(request, 'blog/lista_marcas.html', {'marcas': marcas})
-
-    
